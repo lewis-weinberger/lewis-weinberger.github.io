@@ -1,5 +1,5 @@
 // Load bindings
-import init, { Game } from './pkg/star_trip.js';
+import init, { Game } from '../pkg/star_trip.js';
 const wasm = await init();
 
 // Global variables
@@ -47,7 +47,7 @@ function gameSetup() {
 
   // Load tileset
   tiles = new Image();
-  tiles.src = "assets/tiles_16x16.png";
+  tiles.src = "../images/tiles_16x16.png";
 
   // Initialise toggles
   started = false;

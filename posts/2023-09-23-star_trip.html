@@ -5,31 +5,48 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Lewis Weinberger's personal website">
-        <title>404 Page Note Found</title>
+        <title>Star Trip</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata&amp;display=swap">
-        <link rel="stylesheet" href="./css/default.css">
-        
+        <link rel="stylesheet" href="../css/default.css">
+        <link rel="stylesheet" href="../css/star_trip.css">
     </head>
     <body>
         <header>
             <nav>
-                <a href="./">Home</a>
-                <a href="./about.html">About</a>
-                <a href="./misc.html">Misc</a>
+                <a href="../">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../misc.html">Misc</a>
             </nav>
             <hr>
         </header>
 
         <div class="main">
             <h2>
-                404 Page Note Found
-                
+                Star Trip
+                <span>23 September, 2023</span>
             </h2>
-            <p>Unfortunately the page you’ve tried to access doesn’t exist!</p>
-<p>Return <a href="./">home</a>?</p>
-<p><img src="images/ascii_glenda.png" class="centre" alt="Glenda" /><br />
-</p>
+            <article>
+    <section>
+        <p><a href="https://github.com/lewis-weinberger/star_trip">Star Trip</a> is a
+space adventure game that takes inspiration from the early
+text-based <a href="https://en.wikipedia.org/wiki/Star_Trek_(1971_video_game)">Star Trek</a>
+computer games:</p>
+<div id="game">
+  <canvas id="game-canvas"></canvas>
+  <input type="text" id="game-input">
+</div>
+
+<script>
+  import("/scripts/star_trip.js")
+    .catch(e => console.error("Unable to import index.js:", e));
+</script>
+<p>Try typing <code>HELP</code> for a list of commands.</p>
+<p><strong>Hint</strong>: you can click on the game or hit return to skip the
+rendering animation.</p>
+    </section>
+</article>
+
         </div>
 
         <footer>
@@ -43,7 +60,7 @@
 
             <p><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
             <p>Site generated with <a href="http://jaspervdj.be/hakyll">Hakyll</a>
-               <img src="./images/Haskell-Logo.svg" alt="Haskell" height="16px" /></p>
+               <img src="../images/Haskell-Logo.svg" alt="Haskell" height="16px" /></p>
         </footer>
     </body>
 </html>
